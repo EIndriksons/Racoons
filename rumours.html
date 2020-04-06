@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="static/style-rumours.css">
+        <link rel="icon" href="static/favicon.png" type="image/gif" sizes="16x16">
+        <script src="https://kit.fontawesome.com/243d710828.js" crossorigin="anonymous"></script>
+        <script src="static/script.js"></script>
+        <title>Home of Sheeples - Rumours</title>
+    </head>
+    <body class="rumours">
+        <!-- Back button might load a bit longer due to FA dependency -->
+        <div class="back-button">
+            <a onclick="transitionToPage('index.html')">
+                <i class="fas fa-arrow-circle-left"></i>
+            </a>
+        </div>
+
+        <h1 class="rumours-header ">
+            What the god has in store for us.
+        </h1>
+
+        <!-- Advert on the right side has to be here -->
+        <a onclick="transitionToPage('quiz.html')">
+            <div class="advert-box floating" style="float: right;">
+                <img src="img/advert.jpg" alt="advert" style="width:100%">
+                <div class="advert-box-text">
+                    <h1>Did you know this? Take the quiz!</h1>
+                </div>
+            </div>
+        </a>
+
+        <!-- Actual articles -->
+        <div class="rumour-articles">
+            <div class="rumour-articles-box">
+                <img src="img/rumour1.jpg" alt="Rumors">
+                <div class="rumour-articles-box-text">
+                    <h1 style="display: block; position: relative; width: 100%">Is Jobs hiding a secret super-computer to throw over the goverment? Find out!</h1>
+                    <h5 style="float: left; display: block; position: relative; text-align: left; margin-top: 80 px;">By: Apostrophe | April 1997 | 12 comments</h5>
+                </div>
+            </div>
+            <div class="rumour-articles-box">
+                <img src="img/rumour2.jpg" alt="Rumors">
+                <div class="rumour-articles-box-text">
+                    <h1>Trendiest shoes of 1998. How to show your passion for the only thing that still brings you joy!</h1>
+                    <h5 >By: M. Jackson | March 1997 | 42 comments</h5>
+                </div>
+            </div>
+            <div class="rumour-articles-box">
+                <img src="img/rumour3.jpg" alt="Rumors">
+                <div class="rumour-articles-box-text">
+                    <h1>How will the modern Jesus look in 20 years? Scientists have the answers!</h1>
+                    <h5>By: J. Paul | December 1996 | 69 comments</h5>
+                </div>
+            </div>
+            <div class="rumour-articles-box">
+                <img src="img/rumour4.jpg" alt="Rumors" >
+                <div class="rumour-articles-box-text">
+                    <h1>How to convince your parents to buy the newest Mac so you aren't bullied anymore.</h1>
+                    <h5>By: Mike | September 1996 | 3 comments</h5>
+                </div>
+            </div>
+        </div>
+
+    <div class="footer">
+        <h6 style="margin-right: 20px; margin-bottom: 0px">
+            ©fewworddotrick | 2020
+        </h6>
+    </div>
+    </body>
+</html>

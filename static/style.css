@@ -1,0 +1,80 @@
+/* If the background image doesn't fit, the color should sneakely cover it */
+.index {
+    font-family: 'Times New Roman', Times, serif !important;
+    background-color: rgba(169,169,169,1);
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Welcome to the future text */
+.home-text {
+    text-align: center;
+    margin-top: 12%;
+    font-size: 4rem;
+    text-shadow: 2px 2px rgb(71, 71, 71);
+}
+
+/* The three main navigation options */
+.navigation-options {
+    text-align: center;
+    position: relative;
+    margin-top: 5%;
+    margin-bottom: 7%;
+}
+
+/* So that the box doesn't turn blue due to element being <a> */
+a {
+    color: black;
+}
+
+/* Individual box */
+.navigation-options-box {
+    box-shadow: 8px 8px;
+    transition: 0.3s;
+    width: 25%;
+    height: 25%;
+    margin-right: 30px;
+    border-style: solid;
+    border-width: 2px;
+    display:inline-block;
+}
+  
+/* Shadow on the individual box */
+.navigation-options-box:hover {
+    box-shadow: 10px 10px;
+    color: black;
+}
+  
+/* The grey box of the  ottom text for the individiual box */
+.navigation-options-box-text {
+    padding: 2px;
+    background-color: #eaeaea;
+    border-top: solid 2px;
+  }
+
+/* The text itself for each navigation option */
+.navigation-options-box-text > h1{
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px rgb(71, 71, 71);
+}
+
+/* Well, the footer lol */
+.footer {
+    background-color: #8b8b8b;
+    position: absolute;
+    bottom:0;
+    width:100%;
+    height:20px;
+    text-align: right;
+    border-top: solid 1px;
+}
+
+/* For those fancy transition animations */
+body { 
+    opacity: 0;
+    transition: opacity .5s;
+}

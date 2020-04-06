@@ -1,0 +1,177 @@
+/* Different body for rumours page as we have a different background image */
+.rumours {
+    font-family: 'Times New Roman', Times, serif !important;
+    background-color: rgba(169,169,169,1);
+    background-image: url('background_empty.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+}
+
+/* So that the elements don't turn blue*/
+a {
+    color: rgb(71, 71, 71);
+}
+
+/* Container for the back button and the icon*/
+.back-button {
+    font-size: 50px;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: -6%;
+}
+
+/* Adding a highlight on hover */
+.back-button:hover > a > i {
+    color: black;
+}
+
+/* What the god has in store for us text */
+.rumours-header {
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 3%;
+    font-size: 4rem;
+    text-shadow: 2px 2px rgb(71, 71, 71);
+}
+
+/* Container for all the articles together */
+.rumour-articles{
+    text-align: center;
+    margin-left: 5%;
+    width: 65%;
+}
+
+/* Individual article box */
+.rumour-articles-box {
+    box-shadow: 8px 4px;
+    transition: 0.3s;
+    height: 15%;
+    border-style: solid;
+    border-width: 2px;
+    margin-bottom: 20px;
+    float:left;
+    background-color: #eaeaea;
+}
+
+/* Images need some styling to have a specific size and position */
+.rumour-articles-box > img {
+    width:15%; 
+    border-right: solid 2px; 
+    float: left;
+}
+
+.rumour-articles-box:hover {
+    box-shadow: 10px 6px;
+  }
+
+
+/* Container for all the text in each article */
+.rumour-articles-box-text {
+    padding: 2px 16px 2px;
+    background-color: #eaeaea;
+    width: 85%;
+    float: left; 
+  }
+
+/* Title of each article */
+.rumour-articles-box-text > h1{
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px rgb(71, 71, 71);
+    text-align: left;
+}
+
+/* Sub-text of each article */
+.rumour-articles-box-text > h5{
+    float: left; 
+    text-align: left; 
+    margin-top: §5px;
+}
+
+/* Well, the footer lol */
+.footer {
+    background-color: #8b8b8b;
+    position: absolute;
+    bottom:0;
+    width:100%;
+    height:20px;
+    text-align: right;
+    border-top: solid 1px;
+}
+
+/* So the footer doesn't get messed up */
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+/* For those fancy transition animations */
+body { 
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+
+/* Advert box */
+.advert-box {
+    box-shadow: 8px 8px;
+    transition: 0.3s;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-width: 2px;
+  }
+  
+/* Shadow on the advert box */
+.advert-box:hover {
+    box-shadow: 10px 10px;
+    color: black;
+  }
+  
+/* Advert box bottom text container */
+.advert-box-text {
+    padding: 2px;
+    background-color: #eaeaea;
+    border-top: solid 2px;
+  }
+
+/* The text itself for advert box */
+.advert-box-text > h1{
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px rgb(71, 71, 71);
+    text-align: center;
+}
+
+
+/*  Magical floating animation */
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 15px); }
+    to   { transform: translate(0, -0px); }    
+}
+
+.img-shrine {
+    box-shadow: 8px 4px;
+    transition: 0.3s;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.img-shrine:hover {
+    box-shadow: 10px 10px;
+    color: black;
+}
